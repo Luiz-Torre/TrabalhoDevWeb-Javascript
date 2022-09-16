@@ -45,17 +45,19 @@ function Loja(nome, tipo, descricao,cnpj){
 
 
 
-let loja = new Loja('boticario', 'beleza','loja especializada na beleza','12345678910121');
-
 const array = [
     {nome: 'Outback', tipo: 'Gastronomia', descricao: 'Restaurante de comida Australiana', cnpj: '12345678911111'},
     {nome: 'Cinemark', tipo: 'Cinema', descricao: 'Uma das maiores redes de cinema do Brasil', cnpj: '12345678922222'},
     {nome: 'BaccioDiLatte', tipo: 'Gastronomia', descricao: 'Uma das maiores redes de gellato italiano do Brasil', cnpj: '12345678933333'},
-]
+];
 
 const arrayObjetos =[]
 for (const i of array){
-    console.log(Object.values(i))
-    arrayObjetos.push(Loja(Object.values(i)));
+    let aux = new Loja();
+    for(let somador =0;somador<4;somador ++){
+        aux.Object.keys(i)[0] = Object.values(i)[0];
+
+    }
+    arrayObjetos.push(aux);
 }
 console.log(arrayObjetos)
