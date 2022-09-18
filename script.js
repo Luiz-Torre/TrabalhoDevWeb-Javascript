@@ -3,8 +3,9 @@ function Loja(nome, tipo, descricao,cnpj){
     this._tipo = tipo;
     this._descricao = descricao;
     this._cnpj = cnpj;
+}
 
-    Object.defineProperties(Loja.prototype,{
+Object.defineProperties(Loja.prototype,{
         nome:{
             get: function(){
                 return this._nome;
@@ -39,8 +40,7 @@ function Loja(nome, tipo, descricao,cnpj){
                     this._cnpj = cnpj;
                 },
         }
-    })
-};
+    });
 
 
 
@@ -51,13 +51,13 @@ const array = [
     {nome: 'BaccioDiLatte', tipo: 'Gastronomia', descricao: 'Uma das maiores redes de gellato italiano do Brasil', cnpj: '12345678933333'},
 ];
 
-const arrayObjetos =[]
-for (const i of array){
-    let aux = new Loja();
-    for(let somador =0;somador<4;somador ++){
-        aux.Object.keys(i)[0] = Object.values(i)[0];
+let a = new Loja('a', 'b', 'c','12345678911111');
+let b = new Loja('a', 'b', 'c','12345678911111');
+console.log(a)
+console.log(b)
 
-    }
-    arrayObjetos.push(aux);
-}
-console.log(arrayObjetos)
+const arrayObjetos =[]
+
+
+
+
